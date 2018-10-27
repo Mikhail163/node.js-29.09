@@ -26,11 +26,10 @@ module.exports = {
           use: ['css-loader']
         })
       }
-      
     ]
   },
   plugins: [
-    new ExtractTextPlugin({ filename: 'style.css' }),
+    new ExtractTextPlugin({ filename: 'styles.css' }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
       filename: 'index.html',
